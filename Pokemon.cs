@@ -8,14 +8,14 @@ namespace Pokemon2023
 {
     public class Pokemon
     {
-        public int id { get; set; }
+        public int? Id { get; set; }
 
-        public string name { get; set; }
-        public string type { get; set; }
+        public string? Name { get; set; } = string.Empty;
+        public string? Type { get; set; } = string.Empty;
 
-        public Stats stats {get; set;}
+        public Stats? PokemonStats { get; set; }
 
-        public Spell spells { get; set;}
+        public Spell? PokemonSpells { get; set;}
 
    
     }

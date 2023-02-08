@@ -8,11 +8,22 @@ namespace Pokemon2023
 {
     public class Stats
     {
-   
-        public int health { get; set; }
-        public int damage { get; set; }
-        public int defense { get; set; }
 
+        public int? damage; 
+        public int? health; 
+        public int? defense;
+        public Stats(int dmg, int hp, int def)
+        {
 
+            damage = dmg;
+            health = hp;
+            defense = def;
+        
+
+        }
     }
 }
+
+
+
+
